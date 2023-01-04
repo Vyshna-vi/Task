@@ -5,21 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Sevillana&family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="parent">
-      <form action="">
-        <input type="text" placeholder="Enter Task" class="taskname" /><br />
-        <textarea
-          name="Task Description"
-          id="taskdescrip"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <br />
-        <button>Submit</button>
-      </form>
+      <h1 class="head">To Do List</h1>
+      <div class="child">
+        <form action="">
+          <input type="text" placeholder="Enter Task" class="taskname" /><br />
+          <textarea
+            name="Task Description"
+            class="taskdescrip"
+            cols="28"
+            rows="6"
+            placeholder="Enter Task Description"
+          ></textarea>
+          <br /><br />
+          <button class="submitbtn">Submit</button><br /><br />
+          <button class="listbtn">List</button>
+          <!-- <a href="secound.html">Visit</a> -->
+        </form>
+      </div>
     </div>
   </body>
 </html>

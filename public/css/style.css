@@ -1,0 +1,13 @@
+.parent{
+    width: 300px;
+    height: 400px;
+    border: 1px solid gainsboro;
+    margin-left: 350px;
+    background:linear-gradient(#343434,#e5e4e8);
+    padding: 50px 20px;
+    
+}
+.taskdescrip{
+    margin-top: 5px;
+    padding: 50px 50px;
+}

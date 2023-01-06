@@ -4,41 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task</title>
+    <title>List</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Sevillana&family=Yeon+Sung&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Yeon+Sung&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lists.css" />
   </head>
   <body>
-    <div class="parent">
-      <h1 class="head">To Do List</h1>
-      <div class="child">
-        <form action="">
-          <input type="text" placeholder="Enter Task" class="taskname" /><br />
-          <textarea
-            name="Task Description"
-            class="taskdescrip"
-            cols="26"
-            rows="6"
-            placeholder="Enter Task Description"
-          ></textarea>
-          <br /><br />
-          <button class="addbtn">Add Task</button><br /><br />
-          <button class="listbtn">
-            <a href="lists.html" class="listlink">lists</a>
+    <div class="lists" id="main">
+      <div class="goback">
+        <!-- <a href="index.html" class="addlink"
+          ><i class="fa-solid fa-chevron-left"></i>List</a
+        > -->
+        <h1>List</h1>
+      </div>
+
+      <div class="list list2">
+        <p class="para name">Fruit</p>
+        <ul class="para description">
+          <li>apple</li>
+          <li>orange</li>
+          <li>banana</li>
+        </ul>
+        <div class="btns">
+          <button class="btn delbtn"><i class="fa-solid fa-trash"></i></button>
+          <button class="btn editbtn">
+            <i class="fa-solid fa-pen-to-square"></i>
           </button>
-        </form>
+          <button class="btn checkbtn">
+            <i class="fa-solid fa-check"></i>
+          </button>
+        </div>
+      </div>
+      <div class="list list3">
+        <p class="para name">Fruit</p>
+        <ul class="para description">
+          <li>apple</li>
+          <li>orange</li>
+          <li>banana</li>
+        </ul>
+        <div class="btns">
+          <button class="btn delbtn"><i class="fa-solid fa-trash"></i></button>
+          <button class="btn editbtn">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </button>
+          <button class="btn checkbtn">
+            <i class="fa-solid fa-check"></i>
+          </button>
+        </div>
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

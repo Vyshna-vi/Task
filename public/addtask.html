@@ -23,14 +23,20 @@
     <div class="parent">
       <h1 class="head">To Do List</h1>
       <div class="child">
-        <form action="">
-          <input type="text" placeholder="Enter Task" class="taskname" /><br />
+        <form action="" id="form">
+          <input
+            type="text"
+            placeholder="Enter Task"
+            class="taskname"
+            id="taskname"
+          /><br />
           <textarea
             name="Task Description"
             class="taskdescrip"
             cols="26"
             rows="6"
             placeholder="Enter Task Description"
+            id="taskdescrip"
           ></textarea>
           <br /><br />
           <button class="addbtn">Add Task</button><br /><br />
@@ -40,5 +46,6 @@
         </form>
       </div>
     </div>
+    <script src="addtask.js"></script>
   </body>
 </html>

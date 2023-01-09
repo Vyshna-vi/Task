@@ -21,7 +21,7 @@ const getAllTask = async (req, res) => {
 const getOneTask = async (req, res) => {
   try {
     let Task = await TaskModel.findOne({ _id: req.params.id });
-    res.json(Task);
+    res.json({ sucess: true, message: "Get One Task", Task });
   } catch (error) {
     res.json({ sucess: false, message: "Cannot Find Task" });
   }

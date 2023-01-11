@@ -71,7 +71,9 @@ async function fetchData() {
         <div class="btns">
           <button class="btn delbtn"><i class="fa-solid fa-trash"></i></button>
           <button class="btn editbtn">
-            <i class="fa-solid fa-pen-to-square"></i>
+          <a href="http://localhost:5000/edittask.html?id=${
+            task._id
+          }"><i class="fa-solid fa-pen-to-square"></i></a>
           </button>
           ${
             task.completed

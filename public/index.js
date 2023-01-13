@@ -69,7 +69,9 @@ async function fetchData() {
           <li>banana</li>
         </ul>
         <div class="btns">
-          <button class="btn delbtn"><i class="fa-solid fa-trash"></i></button>
+          <button class="btn delbtn"><i class="fa-solid fa-trash" data-id=${
+            task._id
+          }></i></button>
           <button class="btn editbtn">
           <a href="http://localhost:5000/edittask.html?id=${
             task._id
@@ -91,3 +93,21 @@ async function fetchData() {
   }
 }
 fetchData();
+
+let mainpage = document.querySelector("#main");
+mainpage.addEventListener("click", async function (e) {
+  console.log(e.target);
+  // console.log(e.target.classList.contains("delbtn"));
+  let delbtn = e.target.classList.contains("fa-solid");
+  if (delbtn) {
+    // alert("Delete Task");
+    let id = e.target.getAttribute("data-id");
+    console.log(id);
+    let res = await axios.delete("http://localhost:5000/delete-task/" + id);
+    console.log(res.data);
+    if (res.data.sucess) {
+      // alert("Deleted Task Successfully");
+      window.location.href = "http://localhost:5000/index.html";
+    }
+  }
+});
